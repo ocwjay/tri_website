@@ -1,6 +1,6 @@
 document.body.addEventListener("keydown", keyIn);
 var open = 0;
-function keyIn(){
+function keyIn(event){
   var keyWas = event.which;
   if(keyWas == 13){
     document.getElementById("overlay").style.display = "flex";
