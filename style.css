@@ -123,11 +123,28 @@ body{
   width: 100%;
   background-color: #514F4F;
   border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#leftCol{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#rightCol{
+  background-color: #383737;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 30px;
+  border-radius: 10px;
 }
 
 h1{
-  margin: 30px;
-  padding: 16px;
+  margin: 30px 30px 0 30px;
   width: 200px;
   color: #FFA435;
   font-family: 'Dosis', sans-serif;
