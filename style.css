@@ -169,3 +169,21 @@ p{
   color: #FFA435;
   text-align: center;
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #383737;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FFA435;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
