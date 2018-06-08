@@ -12,7 +12,7 @@ body{
   left: 0;
   overflow-x: hidden;
   display: none;
-  background-color: #111;
+  background-color: #383737;
   opacity: 0.0;
   justify-content: center;
   flex-direction: column;
@@ -23,7 +23,7 @@ body{
   height: 300px;
   flex-direction: column;
   margin: auto;
-  background-color: #fff;
+  background-color: #514F4F;
   height: 95%;
   width: 95%;
   margin: 2.5%;
@@ -33,8 +33,29 @@ body{
 #navLogo{
   margin: auto;
 }
-#funStuff{
+
+#navLinkWrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.navLink{
   margin: auto;
+  text-align: center;
+  color: #FFA435;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.navLink:hover{
+  text-shadow: 0 0 20px #191919;
+}
+
+#menuCloseText{
+  margin: auto;
+  color: #FFA435;
+  text-align: center;
 }
 
 #topbar{
