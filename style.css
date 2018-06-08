@@ -138,6 +138,11 @@ body{
   justify-content: space-around;
 }
 
+#teamInstructions{
+  text-align: center;
+  color: #FFA435;
+}
+
 #leftCol{
   display: flex;
   flex-direction: column;
@@ -155,7 +160,7 @@ body{
 
 h1{
   margin: 30px 30px 0 30px;
-  width: 200px;
+  max-width: 500px;
   color: #FFA435;
   font-family: 'Dosis', sans-serif;
 }
@@ -201,26 +206,26 @@ p{
 #topTriangle{
   -webkit-clip-path: polygon(0 0, 50% 50%, 100% 0);
   clip-path: polygon(0 0, 50% 50%, 100% 0);
-  width: 400px;
+  width: 350px;
   position: relative;
   left: 65px;
-  top: 95px;
+  top: 60px;
 }
 
 #middleTriangle{
-  -webkit-clip-path: polygon(0 0, 0 100%, 50% 50%);
-  clip-path: polygon(0 0, 0 100%, 50% 50%);
-  width: 400px;
+  -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%);
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%);
+  width: 350px;
   position: relative;
-  left: 60px;
-  top: -300px;
+  left: -120px;
+  top: -280px;
 }
 
 #bottomTriangle{
   -webkit-clip-path: polygon(50% 0, 0 50%, 50% 100%);
   clip-path: polygon(50% 0, 0 50%, 50% 100%);
-  width: 400px;
+  width: 350px;
   position: relative;
   left: 65px;
-  top: -495px;
+  top: -445px;
 }
