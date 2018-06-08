@@ -128,6 +128,16 @@ body{
   justify-content: space-between;
 }
 
+#inner-content-team{
+  margin: 16px;
+  width: 100%;
+  background-color: #514F4F;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 #leftCol{
   display: flex;
   flex-direction: column;
@@ -186,4 +196,31 @@ p{
 
 ::-webkit-scrollbar-thumb:hover {
     background: #666;
+}
+
+#topTriangle{
+  -webkit-clip-path: polygon(0 0, 50% 50%, 100% 0);
+  clip-path: polygon(0 0, 50% 50%, 100% 0);
+  width: 400px;
+  position: relative;
+  left: 65px;
+  top: 95px;
+}
+
+#middleTriangle{
+  -webkit-clip-path: polygon(0 0, 0 100%, 50% 50%);
+  clip-path: polygon(0 0, 0 100%, 50% 50%);
+  width: 400px;
+  position: relative;
+  left: 60px;
+  top: -300px;
+}
+
+#bottomTriangle{
+  -webkit-clip-path: polygon(50% 0, 0 50%, 50% 100%);
+  clip-path: polygon(50% 0, 0 50%, 50% 100%);
+  width: 400px;
+  position: relative;
+  left: 65px;
+  top: -495px;
 }
