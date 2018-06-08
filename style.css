@@ -113,9 +113,10 @@ body{
 
 #content{
   background-color: #383737;
-  height: 1500px;
+  height: 800px;
   width: 100%;
   display: flex;
+
 }
 
 #inner-content{
