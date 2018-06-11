@@ -16,13 +16,7 @@ body{
   opacity: 0.0;
   justify-content: center;
   flex-direction: column;
-  animation-name: overlayOpen;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-direction: normal;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-play-state: paused;
+  animation: none;
 }
 
 @keyframes overlayOpen {
