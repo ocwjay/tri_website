@@ -3,7 +3,7 @@ body{
   margin: 0;
 }
 
-#overlay{
+.overlayClosed{
   height: 100%;
   width: 100%;
   position: fixed;
@@ -16,29 +16,22 @@ body{
   opacity: 0.0;
   justify-content: center;
   flex-direction: column;
-  animation: none;
 }
 
-@keyframes overlayOpen {
+@keyframes testOne {
   0% {
     opacity: 0.0;
   }
-  100% {
-    opacity: 1.0
-  }
-}
-@@keyframes overlayClose {
-  0% {
+  100%{
     opacity: 1.0;
-  }
-  100% {
-    opacity: 0.0
   }
 }
 
-.overlayTest{
-  display: flex;
-  animation-play-state: running;
+.overlayOpen{
+  opacity : 1.0;
+  display : flex;
+  animation: testOne 2s ease 1 forwards running;
+  animation-direction: normal;
 }
 
 #overlayContent{
