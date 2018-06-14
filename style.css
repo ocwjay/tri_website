@@ -219,29 +219,30 @@ p{
     background: #666;
 }
 
-#topTriangle{
-  -webkit-clip-path: polygon(0 0, 50% 50%, 100% 0);
-  clip-path: polygon(0 0, 50% 50%, 100% 0);
-  width: 350px;
-  position: relative;
-  left: 65px;
-  top: 60px;
+.columnSizeKeeper{
+  width: 560px;
 }
 
-#middleTriangle{
-  -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%);
-  clip-path: polygon(50% 0, 100% 50%, 50% 100%);
-  width: 350px;
-  position: relative;
-  left: -120px;
-  top: -280px;
+#teamLogo{
+  margin-top: 30px;
 }
 
-#bottomTriangle{
-  -webkit-clip-path: polygon(50% 0, 0 50%, 50% 100%);
-  clip-path: polygon(50% 0, 0 50%, 50% 100%);
-  width: 350px;
-  position: relative;
-  left: 65px;
-  top: -445px;
+#felipe{
+  background-image: url("img/felipe.jpg");
+}
+
+#jena{
+  background-image: url("img/jena.jpg");
+}
+
+#gustavo{
+  background-image: url("img/gustavo.jpg");
+}
+
+.portrait{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
 }
