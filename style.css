@@ -27,10 +27,24 @@ body{
   }
 }
 
+@keyframes testTwo {
+  0% {
+    opacity: 1.0;
+  }
+  100%{
+    opacity: 0.0;
+  }
+}
+
 .overlayOpen{
   opacity : 1.0;
   display : flex;
-  animation: testOne 2s ease 1 forwards running;
+  animation: testOne .75s ease 1 forwards running;
+  animation-direction: normal;
+}
+
+.animationBackwards{
+  animation: testTwo .5s ease 1 forwards running;
   animation-direction: normal;
 }
 
@@ -65,8 +79,9 @@ body{
   font-family: 'Dosis', sans-serif;
 }
 
-.navLink:hover{
+.navLinkSelected{
   text-shadow: 0 0 10px #191919;
+  font-size: 70px;
 }
 
 #menuCloseText{
