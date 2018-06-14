@@ -1,9 +1,9 @@
 document.body.addEventListener("keydown", keyIn);
 var currentLink = 0;
+var openFlag = 0;
 var overlayElement = document.getElementById("overlay");
 function keyIn(event){
   var keyWas = event.which;
-  var openFlag = 0;
   //alert(keyWas);
   if(keyWas == 13){
     overlayElement.classList.add("overlayOpen");
@@ -17,27 +17,37 @@ function keyIn(event){
     //thing that sets the menu selected back to 0
   }
   else if(keyWas == 65){
-    if(currentLink >= 0){
-      if(currentLink <= 4){
-        document.getElementById("link" + currentLink).classList.remove("navLinkSelected");
-        currentLink --;
-        while(currentLink < 0){
-          currentLink = 4;
+    if(openFlag == 1){
+      if(currentLink >= 0){
+        if(currentLink <= 4){
+          document.getElementById("link" + currentLink).classList.remove("navLinkSelected");
+          currentLink --;
+          while(currentLink < 0){
+            currentLink = 4;
+          }
+          selectingNavLinks();
         }
-        selectingNavLinks();
       }
     }
   }
   else if (keyWas == 68) {
-    if(currentLink >= 0){
-      if(currentLink <= 4){
-        document.getElementById("link" + currentLink).classList.remove("navLinkSelected");
-        currentLink ++;
-        while(currentLink > 4){
-          currentLink = 0;
+    if(openFlag == 1){
+      if(currentLink >= 0){
+        if(currentLink <= 4){
+          document.getElementById("link" + currentLink).classList.remove("navLinkSelected");
+          currentLink ++;
+          while(currentLink > 4){
+            currentLink = 0;
+          }
+          selectingNavLinks();
         }
-        selectingNavLinks();
       }
+    }
+  }
+  else if (keyWas == 87) {
+    if(openFlag == 1){
+      var navLinkHref = document.getElementById("link" + currentLink).href;
+      window.location.replace(navLinkHref);
     }
   }
 }
@@ -45,6 +55,8 @@ function keyIn(event){
 function removingOverlayClasses(){
   overlayElement.classList.remove("animationBackwards");
   overlayElement.classList.remove("overlayOpen");
+  document.getElementById("link" + currentLink).classList.remove("navLinkSelected");
+  currentLink = 0;
 }
 
 function selectingNavLinks(event){
